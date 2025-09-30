@@ -1,0 +1,72 @@
+Szegedről eljutás a Duna–Tisza köze városaiba Közlekedési útvonalak autóval, vonattal és busszal
+1. Megyék és városaik
+🟩 Pest vármegye
+•	Cegléd
+•	Nagykőrös
+•	Monor
+•	Albertirsa
+•	Dabas
+•	Gyál
+•	Üllő
+•	Vecsés
+•	Nagykáta
+•	Tápiószecső
+•	Tápiószentmárton
+🟨 Bács-Kiskun vármegye
+•	Kecskemét
+•	Kiskunfélegyháza
+•	Kiskunhalas
+•	Kalocsa
+•	Kiskőrös
+•	Soltvadkert
+•	Bácsalmás
+•	Kunszentmiklós
+•	Dunavecse
+•	Izsák
+•	Tiszakécske
+🟦 Jász-Nagykun-Szolnok vármegye
+•	Szolnok
+•	Jászberény
+•	Jászapáti
+•	Jászkisér
+•	Abony
+•	Törökszentmiklós
+•	Martfű
+
+
+
+🟥 Csongrád-Csanád vármegye
+•	Hódmezővásárhely
+•	Mindszent
+•	Szentes
+•	Csongrád
+•	Szegvár
+•	Mártély
+🟪 Heves vármegye
+•	Hatvan
+•	Gyöngyös
+•	Füzesabony
+•	Tiszanána
+•	Poroszló
+2. Eljutás Szegedről
+🚗 Autóval – leggyorsabb útvonalak
+Város	Távolság	Idő	Útvonal
+Kecskemét	~85 km	1 óra	M5 → 54
+Szolnok	~130 km	1 óra 40 perc	M5 → 44 → 4
+Cegléd	~120 km	1 óra 30 perc	M5 → 405 → 4
+Kiskunfélegyháza	~40 km	35 perc	M5
+Kalocsa	~140 km	1 óra 45 perc	M5 → 54 → 51
+Kiskunhalas	~70 km	1 óra	55-ös főút
+Abony	~125 km	1 óra 30 perc	M5 → 44 → 4
+Nagykőrös	~110 km	1 óra 20 perc	M5 → 441
+🚆 Vonattal – MÁV járatok
+•	Szeged → Kecskemét: közvetlen (~1 óra)
+•	Szeged → Szolnok: átszállás Kiskunfélegyházán vagy Cegléden (~2–2,5 óra)
+•	Szeged → Cegléd: átszállás Kiskunfélegyházán (~2 óra)
+•	Szeged → Kalocsa: vonattal Kiskőrösig, onnan busszal (~3 óra)
+•	Szeged → Kiskunhalas: közvetlen (~1 óra 15 perc)
+🚌 Busszal – Volánbusz járatok
+•	Szeged → Kecskemét: közvetlen (~1 óra 15 perc)
+•	Szeged → Kalocsa: átszállás Kiskőrösön (~2,5–3 óra)
+•	Szeged → Kiskunhalas: közvetlen (~1 óra 20 perc)
+•	Szeged → Szolnok: átszállás Kecskeméten vagy Cegléden (~2,5–3 óra)
