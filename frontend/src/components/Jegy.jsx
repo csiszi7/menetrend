@@ -4,7 +4,6 @@ const Jegy = () => {
   return (
    <div> <form action="#"> <select name="Közlekedési eszközök" id="kozeszk"> <option value="vasut">Vasút</option> <option value="busz">Busz</option> <option value="hev">Hév</option> </select> <br />
 
-```
     <label htmlFor="honnan">Honnan</label>
     <input type="text" name="Honnan" id="honnan" />
     <br />
@@ -115,7 +114,7 @@ const Jegy = () => {
     <br />
 
     <p>visszaút időpontja</p>
-    <input type="date" id="hanykor_vissza" name="appt" /> Hánykor?{" "}
+    Mikor?<input type="date" id="hanykor_vissza" name="appt" />Hánykor? {" "}
     <input type="time" name="Mikor?" id="mikor_vissza" />
     <br />
 
