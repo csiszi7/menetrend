@@ -1,0 +1,6 @@
+.home-kontener {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+}

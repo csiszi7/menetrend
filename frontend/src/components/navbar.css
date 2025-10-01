@@ -1,0 +1,13 @@
+.navbar-kontener {
+    background-color: blue;
+    color: whitesmoke;
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    flex-direction: row;
+}
+
+.navbar-kontener a {
+    color: whitesmoke;
+    text-decoration: none;
+}
