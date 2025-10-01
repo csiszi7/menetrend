@@ -1,9 +1,11 @@
+import Jegy from '../components/Jegy';
 import './Home.css';
 
 const Home = () => {
   return (
     <div className="home-kontener">
-        <h1>Állatmenhely</h1>
+        <h1>Menetrend</h1>
+        <Jegy />
     </div>
   )
 }
