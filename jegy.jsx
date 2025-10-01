@@ -129,6 +129,7 @@ return ( <div> <form action="#"> <select name="Közlekedési eszközök" id="koz
 
     <button name="+Utas" id="+utas">+ Utas</button>
     <button type="reset">Törlés</button>
+    <button name="keres" id="keres">Keresés</button>
   </form>
 </div>
 );
