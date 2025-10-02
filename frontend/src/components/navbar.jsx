@@ -11,6 +11,8 @@ const Navbar = () => {
               <Link to='https://www.mavcsoport.hu/mav-szemelyszallitas/nemzetkozi-utazas'>Nemzetközi Utazás</Link>
               <Link to='https://www.mavcsoport.hu/ugyfelszolgalat/mav-ugyfelszolgalat'>Ügyfészolgálat</Link>
               <Link to='https://jegy.mav.hu/bejelentkezes?compensationRequest=compensationRequest'>Késési biztosítás</Link>
+              <Link to='/menetrend'>Menetrend</Link>
+              
     </div>
   );
 };
