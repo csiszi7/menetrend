@@ -3,8 +3,15 @@ import busz from '../../public/images/busz.png'
 
 
 const Jegy = () => {
+
   return (
-   <div> <form action="#"> 
+   <div> 
+    <p>
+      VÁSÁROLJA MEG JEGYÉT ONLINE! 
+      <br />
+Belföldi és nemzetközi menetjegyét online is megvásárolhatja ezen a weboldalon vagy a MÁV applikációkban. Az online vásárlás nem csupán kényelmesebb és gyorsabb, de bizonyos díjtermékek esetén olcsóbb is, mint az automatából vagy a jegypénztárból vásárolva. Azonos felhasználói fiókkal a böngészőben megvásárolt jegyek a MÁV és MÁV+ app-ban is elérhetők.
+    </p>
+    <form action="#"> 
    <select name="Közlekedési eszközök" id="kozeszk"> 
     <option value="vasut">Vasút</option> 
     <option value="busz">Busz</option> 
@@ -137,6 +144,7 @@ const Jegy = () => {
     <button type="reset">Törlés</button>
     <button name="keres" id="keres">Keresés</button>
   </form>
+  
 </div>
   )
 }
