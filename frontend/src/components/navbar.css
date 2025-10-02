@@ -1,13 +1,36 @@
 .navbar-kontener {
-    background-color: blue;
-    color: whitesmoke;
-    display: flex;
-    gap: 1em;
-    padding: 1em;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2563eb;
+  color: white;
 }
 
-.navbar-kontener a {
-    color: whitesmoke;
-    text-decoration: none;
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #dbeafe;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
 }
