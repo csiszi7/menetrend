@@ -1,9 +1,15 @@
 import React from 'react'
+import busz from '../../public/images/busz.png'
 
 
 const Jegy = () => {
   return (
-   <div> <form action="#"> <select name="Közlekedési eszközök" id="kozeszk"> <option value="vasut">Vasút</option> <option value="busz">Busz</option> <option value="hev">Hév</option> </select> <br />
+   <div> <form action="#"> 
+   <select name="Közlekedési eszközök" id="kozeszk"> 
+    <option value="vasut">Vasút</option> 
+    <option value="busz">Busz</option> 
+    <option value="hev">Hév</option> 
+    </select> <br />
 
     <label htmlFor="honnan">Honnan</label>
     <input type="text" name="Honnan" id="honnan" />
