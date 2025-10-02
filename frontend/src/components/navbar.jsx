@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div className="navbar-kontener">
               <Link to='/'>Home</Link>
-              <Link to='/'>Belföldi Utazás</Link>
-              <Link to='/'>Nemzetközi Utazás</Link>
+              <Link to='/jegy'>Belföldi Utazás</Link>
+              <Link to='/jegy'>Nemzetközi Utazás</Link>
               <Link to='/'>Ügyfészolgálat</Link>
               <Link to='/'>Késési biztosítás</Link>
     </div>
