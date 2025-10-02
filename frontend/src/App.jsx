@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import Jegy from "./components/Jegy";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Menetrend from "./components/menetrend";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/jegy" element={<Jegy />} />
+        <Route path="/menetrend" element={<Menetrend />} />
       </Routes>
     </BrowserRouter>
   )
