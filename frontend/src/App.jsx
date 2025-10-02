@@ -1,6 +1,6 @@
 import Home from "./pages/Home";
 import './App.css'
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Jegy from "./components/Jegy";
 
