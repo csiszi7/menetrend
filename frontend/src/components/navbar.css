@@ -1,36 +1,41 @@
 .navbar-kontener {
+  position: fixed;       /* rögzített pozíció */
+  top: 1rem;             /* távolság a tetejétől */
+  left: 1rem;            /* bal szélhez igazítva */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #2563eb;
+  flex-wrap: wrap;       /* törés, ha szűk a képernyő */
+  gap: 0.5rem;           /* kis távolság a linkek között */
+  background-color: rgba(37, 99, 235, 0.9); /* kék, kis áttetszőség */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  z-index: 1000;         /* minden fölött legyen */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-kontener a {
   color: white;
-}
-
-.logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links li a {
   text-decoration: none;
-  color: white;
   font-weight: 500;
-  transition: color 0.2s ease;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
-.nav-links li a:hover {
+.navbar-kontener a:hover {
+  background-color: #1d4ed8;
   color: #dbeafe;
+  cursor: pointer;
 }
 
+/* Mobil nézet */
 @media (max-width: 600px) {
-  .nav-links {
-    display: none;
+  .navbar-kontener {
+    flex-direction: column; /* linkek függőlegesen */
+    align-items: flex-start; /* balra igazítva */
+  }
+
+  .navbar-kontener a {
+    width: 100%;
+    text-align: left; /* balra igazítva a szöveg */
   }
 }
