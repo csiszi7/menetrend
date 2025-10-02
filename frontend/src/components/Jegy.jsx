@@ -5,7 +5,9 @@ import busz from '../../public/images/busz.png'
 const Jegy = () => {
 
   return (
-   <div> 
+   <div>
+    <br />
+    <br /> 
     <p>
       VÁSÁROLJA MEG JEGYÉT ONLINE! 
       <br />
