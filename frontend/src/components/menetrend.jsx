@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 
 export default function Menetrend() {
-  const [from, setFrom] = useState("Szeged");
+  const [from, setFrom] = useState("");
   const [via, setVia] = useState("");
-  const [to, setTo] = useState("Satu Mare");
+  const [to, setTo] = useState("");
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
-  const [time, setTime] = useState("14:26");
+  const [time, setTime] = useState("00:00");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,6 +40,7 @@ export default function Menetrend() {
           id="from"
           value={from}
           onChange={(e) => setFrom(e.target.value)}
+          placeholder="(Szeged)"
           style={{ width: "100%", padding: 8, marginTop: 6 }}
         />
       </div>
