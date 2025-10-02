@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Jegy = () => {
   return (
    <div> <form action="#"> <select name="Közlekedési eszközök" id="kozeszk"> <option value="vasut">Vasút</option> <option value="busz">Busz</option> <option value="hev">Hév</option> </select> <br />
