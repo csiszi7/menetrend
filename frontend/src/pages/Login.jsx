@@ -1,7 +1,7 @@
 // LoginForm.jsx
 import React, { useState } from "react";
 
-export default function Login({ onLogin, onRegister }) {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -23,12 +23,18 @@ export default function Login({ onLogin, onRegister }) {
       return;
     }
     setError("");
+
+     if (email === "markus.rego.benedek@szbiszeged.hu" && password === '123456789')
+      {
+        window.location.href = '/jegy';
+      }
     // ha nincs onLogin prop, alapértelmezett konzol-üzenet
-    if (typeof onLogin === "function") {
-      onLogin({ email, password });
-    } else {
-      console.log("Login:", { email, password });
-    }
+    // if (typeof onLogin === "function") {
+    //   // onLogin({ email, password });
+     
+    // } else {
+    //   console.log("Login:", { email, password });
+    // }
   };
 
   const handleRegister = (e) => {
@@ -94,7 +100,7 @@ export default function Login({ onLogin, onRegister }) {
       )}
 
       <div style={{ display: "flex", gap: 8 }}>
-        <button type="submit" style={{ flex: 1, padding: "10px 12px" }}>
+        <button type="submit"  style={{ flex: 1, padding: "10px 12px" }}>
           Bejelentkezés
         </button>
 
