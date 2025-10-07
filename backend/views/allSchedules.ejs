@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menetrendek</title>
+</head>
+<body>
+    <h1>Létező menetrendek</h1>
+    <a href="/api/schedules/newschedule">Új menetrend felvétele</a>
+    <div id="menetrendek">
+        <% menetrendek.forEach(elem => { %>
+            <div class="menetrend">
+                <p>Indulás helye: <%= elem.induloallomas %></p>
+                <p>Érkezés helye: <%= elem.celallomas %></p>
+                <button onclick="modositas('<%= elem._id %>')">Módosítás</button>
+                <button onclick="torles('<%= elem._id %>')">Törlés</button>
+            </div>
+        <% }) %>
+    </div>
+    <script>
+        function modositas(id) {
+            console.log(id);
+        }
+
+        async function torles(id) {
+            const response = await fetch(`/api/schedules/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                window.alert('Sikeres törlés!');
+                window.location.href = '/api/schedules';
+            }
+        }
+    </script>
+</body>
+</html>

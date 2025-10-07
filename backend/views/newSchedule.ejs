@@ -1,0 +1,96 @@
+<form 
+  href="/api/schedules/newschedule"
+  method="POST"
+  style="
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+  "
+>
+  <!-- Közlekedési eszközök -->
+  <div style="margin-bottom: 12px;">
+    <label>Közlekedési eszköz: </label>
+    <span role="img" aria-label="train">🚆</span>
+    <span role="img" aria-label="bus">🚌</span>
+    <span role="img" aria-label="tram">🚋</span>
+  </div>
+
+  <!-- Honnan -->
+  <div style="margin-bottom: 12px;">
+    <label for="from">Honnan?</label>
+    <input
+      id="from"
+      name="from"
+      placeholder="(Szeged)"
+      style="width: 100%; padding: 8px; margin-top: 6px;"
+      value="<%= typeof from !== 'undefined' ? from : '' %>"
+    />
+  </div>
+
+  <!-- Érintve -->
+  <div style="margin-bottom: 12px;">
+    <label for="via">Érintve</label>
+    <input
+      id="via"
+      name="via"
+      placeholder="(opcionális)"
+      style="width: 100%; padding: 8px; margin-top: 6px;"
+      value="<%= typeof via !== 'undefined' ? via : '' %>"
+    />
+  </div>
+
+  <!-- Hova -->
+  <div style="margin-bottom: 12px;">
+    <label for="to">Hova?</label>
+    <input
+      id="to"
+      name="to"
+      style="width: 100%; padding: 8px; margin-top: 6px;"
+      value="<%= typeof to !== 'undefined' ? to : '' %>"
+    />
+  </div>
+
+  <!-- Mikor -->
+  <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+    <div style="flex: 1;">
+      <label for="date">Mikor?</label>
+      <input
+        id="date"
+        name="date"
+        type="date"
+        style="width: 100%; padding: 8px; margin-top: 6px;"
+        value="<%= typeof date !== 'undefined' ? date : new Date().toISOString().slice(0,10) %>"
+      />
+    </div>
+    <div style="flex: 1;">
+      <label for="time">Hánykor?</label>
+      <input
+        id="time"
+        name="time"
+        type="time"
+        style="width: 100%; padding: 8px; margin-top: 6px;"
+        value="<%= typeof time !== 'undefined' ? time : '00:00' %>"
+      />
+    </div>
+  </div>
+
+  <!-- Keresés -->
+  <button
+    type="submit"
+    style="
+      width: 100%;
+      padding: 12px 0;
+      background: #ffd500;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    "
+  >
+    🔍 Keresés
+  </button>
+</form>

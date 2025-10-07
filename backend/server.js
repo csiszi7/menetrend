@@ -2,14 +2,14 @@ require('dotenv').config();
 
 const path = require('node:path');
 const express = require('express');
-const app = express();
+const dbConnection = require('./utils/dbConnection.js');
 
+const app = express();
 app.use(express.static(path.resolve(__dirname, 'public')));
 app.set('view engine', 'ejs');
+app.use(express.json());
 
 const PORT = process.env.PORT || 3700;
-
-const dbConnection = require('./utils/dbConnection.js');
 
 dbConnection()
     .then(() => {
@@ -22,14 +22,6 @@ dbConnection()
         console.log(error.message);
     });
 
-app.get('/', (req, res) => {
-    try {
-        res.statusCode = 200;
-        return res.render('index');
-    }
-    catch (error) {
-        res.statusCode = 404;
-        return res.render('404.ejs');
-    }
-});
+app.use('/api', require('./routes/mainRoutesBackend.js'));
+app.use('/api/schedules', require('./routes/schedulesRoutesBackend.js'));
 

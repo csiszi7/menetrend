@@ -24,20 +24,20 @@ const scheduleSchema = new mongoose.Schema(
         ],
         kedvezmeny: {
             type: String,
-                required: true
+            required: true
         },
         kortabla: {
             type: String,
-                required: true
+            required: true
         },
         indulasideje: {
             type: String,
-                required: true
+            required: true
         
         },
         visszaideje: {
             type: String,
-                required: true
+            required: true
         },
         klima: {
             type: Boolean,
@@ -49,7 +49,6 @@ const scheduleSchema = new mongoose.Schema(
         }
 
     },
-    
     {
         type: String,
         timestamps: true
