@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 
 const scheduleSchema = new mongoose.Schema(
     {
+        tipus: {
+            type: String,
+            required: true,
+        },
         induloallomas: {
             type: String,
             required: true,

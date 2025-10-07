@@ -3,7 +3,7 @@ const Schedule = require('../models/Schedule');
 exports.getAllSchedules = async (req, res) => {
     try {
         const menetrendek = await Schedule.find({});
-        console.log(menetrendek);
+        // console.log(menetrendek);
         
         res.statusCode = 200;
         return res.render('allSchedules.ejs', { menetrendek });

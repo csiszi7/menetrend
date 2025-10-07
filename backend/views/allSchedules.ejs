@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Létező menetrendek</h1>
-    <a href="/api/schedules/newschedule">Új menetrend felvétele</a>
+    <%- include('nav.ejs') %>
     <div id="menetrendek">
         <% menetrendek.forEach(elem => { %>
             <div class="menetrend">

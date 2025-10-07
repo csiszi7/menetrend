@@ -15,7 +15,7 @@ dbConnection()
     .then(() => {
         console.log('Sikeres adatbázis csatlakozás!');
         app.listen(PORT, () => {
-            console.log(`http://localhost:${PORT}`);
+            console.log(`http://localhost:${PORT}/api`);
         });
     })
     .catch((error) => {

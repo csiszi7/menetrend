@@ -9,3 +9,42 @@ router.get('/newschedule', getNewSchedule);
 router.delete('/:id', deleteOneSchedule);
 
 module.exports = router;
+
+router.post('/newschedule', async (req, res) => {
+  try {
+    const {
+      tipus,
+      induloallomas,
+      celallomas,
+      idopontok,
+      allomasok,
+      kedvezmeny,
+      kortabla,
+      indulasideje,
+      visszaideje,
+      klima,
+      helyjegy
+    } = req.body;
+
+    const ujMenetrend = new ScheduleModel({
+      tipus,
+      induloallomas,
+      celallomas,
+      idopontok: idopontok.split('\n').map(s => s.trim()).filter(Boolean),
+      allomasok: allomasok.split('\n').map(s => s.trim()).filter(Boolean),
+      kedvezmeny,
+      kortabla,
+      indulasideje,
+      visszaideje,
+      klima: klima === 'true',
+      helyjegy: helyjegy === 'true'
+    });
+
+    await ujMenetrend.save();
+    console.log('Új menetrend mentve:', ujMenetrend);
+    res.redirect('/api/schedules');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Hiba történt a mentés során.');
+  }
+});
