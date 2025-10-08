@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Új menetrend felvétele</title>
 </head>
 <body>
-  
+  <h1>Új menetrend felvétele</h1>
   <%- include('nav.ejs') %>
-    <form action="/api/schedules/newschedule" method="POST">
-  <label for="tipus">Közlekedési eszköz:</label>
-  <input type="text" id="tipus" name="tipus" required /><br>
 
-  <label for="induloallomas">Induló állomás:</label>
-  <input type="text" id="induloallomas" name="induloallomas" required /><br>
+  <form action="/api/schedules/newschedule" method="POST" style="max-width: 400px; margin-bottom: 30px;">
+    <label for="induloallomas">Indulás helye:</label>
+    <input type="text" id="induloallomas" name="induloallomas" required style="width:100%; margin-bottom:10px;" />
 
-  <label for="celallomas">Célállomás:</label>
-  <input type="text" id="celallomas" name="celallomas" required /><br>
+    <label for="celallomas">Érkezés helye:</label>
+    <input type="text" id="celallomas" name="celallomas" required style="width:100%; margin-bottom:10px;" />
 
-  <label for="idopontok">Időpontok (soronként egy):</label>
-  <textarea id="idopontok" name="idopontok" rows="4"  required></textarea><br>
+    <label for="idopontok">Időpontok (soronként egy):</label>
+    <textarea id="idopontok" name="idopontok" rows="5" style="width:100%; margin-bottom:10px;" placeholder="08:00&#10;12:00&#10;16:00"></textarea>
 
-  <label for="allomasok">Állomások (soronként egy):</label>
-  <textarea id="allomasok" name="allomasok" rows="4" required></textarea><br>
+    <label for="allomasok">Állomások (soronként egy):</label>
+    <textarea id="allomasok" name="allomasok" rows="5" style="width:100%; margin-bottom:10px;" placeholder="Kecskemét&#10;Cegléd&#10;Szeged"></textarea>
 
-  <label for="kedvezmeny">Kedvezmény:</label>
-  <input type="text" id="kedvezmeny" name="kedvezmeny" required /><br>
+    <label for="kedvezmeny">Kedvezmény:</label>
+    <input type="text" id="kedvezmeny" name="kedvezmeny" style="width:100%; margin-bottom:10px;" />
 
-  <label for="kortabla">Körtábla:</label>
-  <input type="text" id="kortabla" name="kortabla" required /><br>
+    <label for="kortabla">Körtábla:</label>
+    <input type="text" id="kortabla" name="kortabla" style="width:100%; margin-bottom:10px;" />
 
-  <label for="indulasideje">Indulás ideje:</label>
-  <input type="text" id="indulasideje" name="indulasideje" required /><br>
+    <label for="indulasideje">Indulás ideje:</label>
+    <input type="text" id="indulasideje" name="indulasideje" style="width:100%; margin-bottom:10px;" />
 
-  <label for="visszaideje">Visszaindulás ideje:</label>
-  <input type="text" id="visszaideje" name="visszaideje" required /><br>
+    <label for="visszaideje">Visszaideje:</label>
+    <input type="text" id="visszaideje" name="visszaideje" style="width:100%; margin-bottom:10px;" />
 
-  <label><input type="checkbox" name="klima" value="true" /> Klíma</label>
-  <label><input type="checkbox" name="helyjegy" value="true" /> Helyjegy</label><br>
+    <label><input type="checkbox" name="klima" /> Klíma</label>
+    <label><input type="checkbox" name="helyjegy" /> Helyjegy</label>
 
-  <button type="submit">Menetrend mentése</button>
-  
-</form>
-<style>
-  
-  ul {
-    margin-top: 4px;
-    margin-bottom: 12px;
-    padding-left: 20px;
-  }
-  li {
-    line-height: 1.4;
-  }
-</style>
-  </button>
-</form>
+    <button type="submit" style="display:block; margin-top:15px; padding:10px 20px;">💾 Mentés</button>
+  </form>
 </body>
 </html>
-
-

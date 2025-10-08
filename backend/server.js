@@ -9,6 +9,8 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.use(express.json());
 
+app.use(express.urlencoded({ extended: true }));
+
 const PORT = process.env.PORT || 3700;
 
 dbConnection()
