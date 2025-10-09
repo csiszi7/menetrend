@@ -35,10 +35,10 @@ const Jegy = () => {
     
 
     
-    <p>odaút időpontja</p>
-    <label htmlFor="hanykor">Mikor?</label>
-    <input type="date" id="hanykor" name="appt" /> Hánykor?{" "}
-    <input type="time" name="Mikor?" id="mikor" />
+    <p>Utazás várható időtartama:</p>
+    <label htmlFor="idotartam">Mikor?</label>
+    <input type="date" id="idotartam" name="appt" /> Várható időtartam{" "}
+    <input type="time" name="idotartam" id="idotartam" />
     <br />
 
     <p>visszaút időpontja</p>

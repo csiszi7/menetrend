@@ -34,6 +34,11 @@ const scheduleSchema = new mongoose.Schema(
             type: String,
             required: true
         },
+        idotartam: {
+            type: String,
+            required: true
+        
+        },
         indulasideje: {
             type: String,
             required: true
